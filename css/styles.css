@@ -54,7 +54,7 @@ main {
   margin-top: 0;
   margin-bottom: 0;
   background-color: black;
-  border: 4px solid white;
+  border: 2px solid white;
   border-radius: 5%;
   color: white;
 }
@@ -117,4 +117,19 @@ footer p {
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .card a {
+        bottom: 20;
+    }
 }
