@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
 body {
@@ -92,7 +93,6 @@ main {
 footer {
     left: 0;
     bottom: 0;
-    margin-top: 6%;
     width: 100%;
     height: 200px;
     background-color: rgb(10, 10, 10);
@@ -119,6 +119,47 @@ footer p {
     color: #cacdd2;
 }
 
+.about-me {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(18, 18, 18);
+    margin-top: 75px;
+}
+
+.p-div {
+    float: right;
+    width: 70%;
+    background-color:  rgb(28, 28, 28);
+    height: 87%;
+    
+}
+
+.p-div p {
+    color: white;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 150%;
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+}
+
+.p-div img {
+    height: 80px;
+}
+
+.about-left {
+    background-color: white;
+    height: 87%;
+    max-width: 30%;
+}
+
+.about-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 800px) {
     .cards {
         flex-direction: column;
@@ -131,5 +172,17 @@ footer p {
 
     .card a {
         bottom: 20;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-left img {
+        object-position: center;
+    }
+
+    .p-div {
+        min-width: 100%;
     }
 }
